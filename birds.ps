@@ -1,5 +1,5 @@
 %!PS-Adobe-2.0 EPSF-2.0
-%%Title: Escher birb tesselation.
+%%Title: Escher bird tesselation.
 %%Creator: Einar W. Høst 
 %%Pages: 1
 %%EndComments
@@ -31,7 +31,7 @@
 % Consumes: [ r g b ] color
 % Produces: 
 % Side-effect: drawing.
-/draw-birb {                 % color
+/draw-bird {                 % color
   newpath
 
    0.000  0.000 moveto 
@@ -454,7 +454,7 @@
 
 /blank { pop } def 
 
-/birb-picture { draw-birb } create-picture def 
+/bird-picture { draw-bird } create-picture def 
 
 /some-tox [ [100 440] 0 400 ] def
 
@@ -466,9 +466,9 @@ def
 
 /some-lens [ some-colors some-tox ] def
 
-some-lens /birb-picture load self-tri dup skip-north exch skip-east diamond exec
+some-lens /bird-picture load self-tri dup skip-north exch skip-east diamond exec
 
-%some-lens /birb-picture load exec 
+%some-lens /bird-picture load exec 
 
 % gswin64 -sDEVICE=pdfwrite -o limit-4.pdf 3-color-fish.ps
 
